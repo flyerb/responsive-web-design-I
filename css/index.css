@@ -74,15 +74,22 @@ body{
 .NavBar{
 	display:flex;
 	margin: 2%;
+	align-items: center;
 }
 nav a {
-	color: lightgrey;
+	color: darkgrey;
+	text-decoration: none;
+	font-weight: bold;
 	
 }
 .Links{
 	width: 80%;
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.logo{
+	;
 }
 
 /* Header */
@@ -105,12 +112,16 @@ nav a {
 	border: 50px;
 } 
 h1{
-	font-size: 50px;
+	font-size: 80px;
 		
 }
 .button{
 	text-align: center;
-	width:90px;
+	width: 185px;
+	height: 30px;
+	font-size: 12pt;
+	background-color: white;
+	border: 1px solid black;
 
 }
 /* First Section */
@@ -119,10 +130,10 @@ h1{
 	display: flex;
 }
 .firstbox{
-	padding: 10%;
+	padding: 5%;
 }
 .secondbox{
-	padding: 10%;
+	padding: 5%;
 }
 
 /* Second Section*/
@@ -152,23 +163,119 @@ display: flex;
 	line-height: 20pt;
 }
 
+address{
+	line-height: 20px;
+}
+
 /*Footer*/
 
 footer{
 	text-align: center;
 }
 
+/* 800PX View */ 
+
+@media (max-width: 800px){
+
+.NavBar{
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.logo{
+	width: 27%;
+	padding-left:3%;
+}
+
+.Links{
+	width:120%;
+	margin-top: 7%;
+}
+
+nav a{
+	text-decoration: none;
+	font-weight: bold;
+	color: darkgrey;
+}
+
+.LeftHalf{
+	margin:3%;
+	width: 700px;
+	padding-bottom: 3%;
+}
+
+h1{
+	font-size: 70px;
+}
+
+button{
+	font-size: 17px;
+	border: 2px solid black;
+	background-color: white;
+	padding: 1%;
+	margin-top: 2%;;
+}
+
+.LeftHalf button{
+	width: 27%
+}
+
+.RightHalf{
+	display: none;
+}
+
+.firstbox{
+	padding: 5%;
+}
+
+.secondbox{
+	padding: 5%;
+}
+
+.One{
+	padding: 3%;
+}
+
+.Two{
+	padding: 3%;
+}
+
+.Three{
+	padding: 3%;
+}
+
+
+
 /* 500PX View */ 
 
 @media (max-width: 500px){
 
-.NavBar{
-    display: flex;
-    display: column;
+.logo{
+	width:50%;
 }
 
-.RightHalf{
-    display: none;
+.NavBar .Links a{
+	text-align: center;
+	
+}	
+	
+.NavBar .Links{
+	align-items: center;
+}
+
+.Links{
+	flex-direction: column;
+	font-size: 25px;
+	justify-content: center;
+	
+}
+
+nav a{
+	border-top: 1px solid black;
+	width: 390px;
+	padding: 20px;
+	align-items: center;
 }
 
 .FirstSection{
@@ -210,6 +317,9 @@ footer{
     margin-bottom: 1%;
     padding: 3%;
 }
+
+
+
 
 /* SERVICE PAGE STARTS */
 /* SERVICE PAGE STARTS */
