@@ -1,3 +1,279 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+body{
+	margin: 4%;
+}
+/* Navigation Bar */
+.NavBar{
+	display:flex;
+	margin: 2%;
+}
+nav a {
+	color: lightgrey;
+	
+}
+.Links{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* Header */
+.Header{
+	display:flex;
+	justify-content: space-evenly;
+	border-bottom: 3px black solid;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.LeftHalf{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		text-align: center;
+}
+.RightHalf{
+	border: 50px;
+} 
+h1{
+	font-size: 50px;
+		
+}
+.button{
+	text-align: center;
+	width:90px;
+
+}
+/* First Section */
+
+.FirstSection{
+	display: flex;
+}
+.firstbox{
+	padding: 10%;
+}
+.secondbox{
+	padding: 10%;
+}
+
+/* Second Section*/
+
+.middle-img{
+	width: 100%;
+
+}
+
+/* Third Section */
+
+.ThirdSection{
+display: flex;
+}
+.One{
+	padding: 50px;
+}
+.Two{
+	padding: 50px;
+}
+.Three{
+	padding: 50px;
+}
+#Contact{
+	padding: 50px;
+	border-top: 3px black solid;
+	line-height: 20pt;
+}
+
+/*Footer*/
+
+footer{
+	text-align: center;
+}
+
+/* 500PX View */ 
+
+@media (max-width: 500px){
+
+.NavBar{
+    display: flex;
+    display: column;
+}
+
+.RightHalf{
+    display: none;
+}
+
+.FirstSection{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.firstbox{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:3%;
+}
+
+.secondbox{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:3%;
+}
+
+.ThirdSection{
+    flex-flow: wrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.One{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding:3%;
+}
+
+.Two{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 3%;
+}
+
+.Three{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 3%;
+}
+
+/* SERVICE PAGE STARTS */
+/* SERVICE PAGE STARTS */
+
+/*SERVICE Nav Bar*/
+.SNavBar{
+	display:flex;
+	margin: 2%;
+}
+div a {
+	color: lightgrey;
+	
+}
+.SLinks{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/*Header*/
+.services-header-img{
+width: 100%;
+
+}
+.SHeader{
+	display: flex;
+	flex-direction: column;
+}
+.SServices{
+	padding: 35px;
+	border-bottom: 2px black solid;
+}
+
+/* Middle Section*/
+.D{
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 45%;
+	padding: 20px;
+	margin: 20px;
+}
+.LearnMore{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	border-bottom: 2px black solid;
+	padding: 35px;
+}
+
+/* Services Last Section */
+
+.SLastSection{
+	display: flex;
+	margin: 40px;
+}
+.SLeftSide{
+	display:flex;
+	flex-direction: column;
+	align-items: baseline;
+	margin-right: 20px;
+}
+.Slist{
+	line-height: 2;
+	list-style-position: inside;
+}
 
